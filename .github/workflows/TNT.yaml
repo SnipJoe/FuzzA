@@ -40,7 +40,7 @@ jobs:
           go install -v github.com/tomnomnom/waybackurls@latest
           go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
           go install -v github.com/projectdiscovery/mapcidr/cmd/mapcidr@latest
-          go install -v github.com/zan8in/afrog/v3/cmd/afrog@latest
+          #go install -v github.com/zan8in/afrog/v3/cmd/afrog@latest
           
         shell: bash
 
@@ -85,7 +85,7 @@ jobs:
         continue-on-error: true
         timeout-minutes: 340
         run: |
-          nuclei -up && nuclei -ut && afrog
+          nuclei -up && nuclei -ut #&& afrog
           git clone https://github.com/projectdiscovery/fuzzing-templates.git
           
           nuclei -l active_subdomains.txt -nh -it /fuzzing-templates -rl 800 -o fuzz_out.txt
@@ -94,8 +94,8 @@ jobs:
           nuclei -l active_urls.txt -nh -it /fuzzing-templates -rl 800 -o fuzz_out1.txt
           nuclei -l active_urls.txt -nh -s medium, high, critical -rl 800 -o hig_out1.txt
 
-          afrog -T active_subdomains.txt -rl 900 | tee af_out.txt
-          afrog -T active_urls.txt -S medium, high, critical -rl 900 | tee af_out1.txt
+          #afrog -T active_subdomains.txt -rl 900 | tee af_out.txt
+          #afrog -T active_urls.txt -S medium, high, critical -rl 900 | tee af_out1.txt
           
         shell: bash
 

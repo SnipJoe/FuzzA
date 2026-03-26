@@ -4,7 +4,7 @@ name: TNT
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron: '*/5 * * * *'
+    - cron: '0 */5 * * *'
     - cron: '38 12,17 * * *'
 
 jobs:

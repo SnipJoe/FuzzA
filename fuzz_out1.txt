@@ -1,12 +1,5 @@
 [dns-rebinding:IPv4] [dns] [unknown] en.szafi.com.cn ["127.0.0.1"]
 [dns-rebinding:IPv4] [dns] [unknown] m.szap.com ["127.0.0.1"]
-[wildcard-dns-detect] [dns] [info] 3CHPg2DrENgg5pv8WwR4rwHTJjd-3CHPg2DrENgg5pv8WwR4rwHTJjd.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CHPg2DrENgg5pv8WwR4rwHTJjd-3CHPg2DrENgg5pv8WwR4rwHTJjd.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CHPg2DrENgg5pv8WwR4rwHTJjd-3CHPg2DrENgg5pv8WwR4rwHTJjd.mail.sztop.com ["18.192.252.23"]
-[aspx-debug-mode] [http] [info] https://anju.szhome.com:443/Foobar-debug.aspx
-[aspx-debug-mode] [http] [info] https://bol.szhome.com:443/Foobar-debug.aspx
-[aspx-debug-mode] [http] [info] https://img4.szhome.com:443/Foobar-debug.aspx
-[cookies-without-httponly] [javascript] [info] bbs.szhome.com:443 ["SameSite"]
-[cookies-without-secure] [javascript] [info] bbs.szhome.com:443 ["SameSite"]
-[cookies-without-secure] [javascript] [info] mail.sutpc.com:443 ["ssl_edition","sms_id"]
-[cookies-without-secure] [javascript] [info] mail.szap.com:443 ["magicwinmail_default_language","magicwinmail_login_domain","magicwinmail_client_id","magicwinmail_default_theme","magicwinmail_agent_type"]
+[wildcard-dns-detect] [dns] [info] 3CIgo3rkuNHvK6GNw2muBVNv2p0-3CIgo3rkuNHvK6GNw2muBVNv2p0.kleinanzeigen.sztop.com ["18.192.252.23"]
+[wildcard-dns-detect] [dns] [info] 3CIgo3rkuNHvK6GNw2muBVNv2p0-3CIgo3rkuNHvK6GNw2muBVNv2p0.kleinanzeigen.sztop.com ["18.192.252.23"]
+[wildcard-dns-detect] [dns] [info] 3CIgo3rkuNHvK6GNw2muBVNv2p0-3CIgo3rkuNHvK6GNw2muBVNv2p0.mail.sztop.com ["18.192.252.23"]

@@ -1,14 +1,106 @@
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
-[wildcard-dns-detect] [dns] [info] 3CX7LOBIim5woYnoGePIjE3ztrn-3CX7LOBIim5woYnoGePIjE3ztrn.kleinanzeigen.sztop.com ["18.192.252.23"]
+[cookies-without-secure] [javascript] [info] mail.szap.com:443 ["magicwinmail_default_theme","magicwinmail_agent_type","magicwinmail_default_language","magicwinmail_login_domain","magicwinmail_client_id"]
+[waf-detect:apachegeneric] [http] [info] https://mail.szap.com:443
+[waf-detect:nginxgeneric] [http] [info] https://img.bbs.szhome.com:443
+[CVE-2026-23829] [tcp] [medium] mail.szap.com:25
+[smtp-detect] [tcp] [info] mail.szap.com:25
+[smtp-commands-enum:ehlo] [tcp] [info] mail.szap.com:25 ["AUTH","8BITMIME","H","AUTH LOGIN PLAIN"]
+[smtp-detect] [tcp] [info] mail.szap.com:25
+[smtp-detect] [tcp] [info] mail.szap.com:25
+[smtp-commands-enum:ehlo] [tcp] [info] mail.szap.com:25 ["H","AUTH LOGIN PLAIN","AUTH","8BITMIME"]
+[smtp-commands-enum:ehlo] [tcp] [info] mail.szap.com:25 ["H","AUTH LOGIN PLAIN","AUTH","8BITMIME"]
+[deprecated-tls:tls_1.1] [ssl] [info] mail.szap.com:993 ["tls11"]
+[deprecated-tls:tls_1.1] [ssl] [info] mail.szap.com:995 ["tls11"]
+[deprecated-tls:tls_1.1] [ssl] [info] mail.szap.com:465 ["tls11"]
+[weak-cipher-suites:tls-1.1] [ssl] [low] mail.szap.com:995 ["[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]"]
+[tls-version] [ssl] [info] mail.szap.com:993 ["tls11"]
+[weak-cipher-suites:tls-1.1] [ssl] [low] mail.szap.com:993 ["[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]"]
+[tls-version] [ssl] [info] mail.szap.com:995 ["tls11"]
+[weak-cipher-suites:tls-1.1] [ssl] [low] mail.szap.com:465 ["[tls11 TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA]"]
+[tls-version] [ssl] [info] mail.szap.com:465 ["tls11"]
+[tls-version] [ssl] [info] mail.szap.com:993 ["tls12"]
+[tls-version] [ssl] [info] mail.szap.com:465 ["tls12"]
+[tls-version] [ssl] [info] mail.szap.com:995 ["tls12"]
+[weak-csp-detect:missing-object-src] [http] [info] https://mail.szap.com:443 ["frame-ancestors 'self';"]
+[weak-csp-detect:missing-script-src] [http] [info] https://mail.szap.com:443 ["frame-ancestors 'self';"]
+[xss-deprecated-header] [http] [info] https://mail.szap.com:443 ["1; mode=block"]
+[apache-detect] [http] [info] https://mail.szap.com:443 ["Apache"]
+[tls-version] [ssl] [info] mail.szap.com:993 ["tls13"]
+[tls-version] [ssl] [info] ddzf-webapi.szhome.com:443 ["tls12"]
+[tls-version] [ssl] [info] app.szhome.com:443 ["tls12"]
+[tls-version] [ssl] [info] mail.szap.com:465 ["tls13"]
+[tls-version] [ssl] [info] mail.szap.com:995 ["tls13"]
+[tls-version] [ssl] [info] ddzf-webapi.szhome.com:443 ["tls13"]
+[tls-version] [ssl] [info] app.szhome.com:443 ["tls13"]
+[tls-version] [ssl] [info] webapi.bbs.szhome.com:443 ["tls12"]
+[tls-version] [ssl] [info] mail.szap.com:443 ["tls12"]
+[tls-version] [ssl] [info] bol.dg.szhome.com:443 ["tls12"]
+[tls-version] [ssl] [info] img.bbs.szhome.com:443 ["tls12"]
+[tls-version] [ssl] [info] ddqk-webapi.szhome.com:443 ["tls12"]
+[weak-cipher-suites:tls-1.2] [ssl] [low] mail.szap.com:443 ["[tls12 TLS_RSA_WITH_AES_256_GCM_SHA384]"]
+[tls-version] [ssl] [info] webapi.bbs.szhome.com:443 ["tls13"]
+[tls-version] [ssl] [info] bol.dg.szhome.com:443 ["tls13"]
+[tls-version] [ssl] [info] ddqk-webapi.szhome.com:443 ["tls13"]
+[tls-version] [ssl] [info] mail.szap.com:443 ["tls13"]
+[aspnet-version-detect] [http] [info] https://ddzf-webapi.szhome.com:443 ["4.0.30319"]
+[aspnet-version-detect] [http] [info] https://ddqk-webapi.szhome.com:443 ["4.0.30319"]
+[aspnet-version-detect] [http] [info] https://app.szhome.com:443/%3f ["4.0.30319"]
+[form-detection] [http] [info] https://cas.szhome.com/cas/login?returnurl=http%3a%2f%2fwebapi.bbs.szhome.com%2f
+[http-missing-security-headers:strict-transport-security] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:content-security-policy] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:x-content-type-options] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:referrer-policy] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:clear-site-data] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:permissions-policy] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:x-frame-options] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://bol.dg.szhome.com:443
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:strict-transport-security] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:content-security-policy] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:clear-site-data] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:missing-content-type] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:permissions-policy] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:x-frame-options] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:x-content-type-options] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:referrer-policy] [http] [info] https://app.szhome.com:443
+[http-missing-security-headers:strict-transport-security] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:content-security-policy] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:x-frame-options] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:x-content-type-options] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:missing-content-type] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:permissions-policy] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:referrer-policy] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:clear-site-data] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://ddqk-webapi.szhome.com:443
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:strict-transport-security] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:permissions-policy] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:clear-site-data] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:missing-content-type] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:content-security-policy] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:x-frame-options] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:x-content-type-options] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:referrer-policy] [http] [info] https://ddzf-webapi.szhome.com:443
+[http-missing-security-headers:permissions-policy] [http] [info] https://mail.szap.com:443
+[http-missing-security-headers:clear-site-data] [http] [info] https://mail.szap.com:443
+[http-missing-security-headers:missing-content-type] [http] [info] https://mail.szap.com:443
+[fingerprinthub-web-fingerprints:winmail-server] [http] [info] https://mail.szap.com:443
+[robots-txt] [http] [info] https://webapi.bbs.szhome.com:443/robots.txt
+[robots-txt] [http] [info] https://ddzf-webapi.szhome.com:443/robots.txt
+[robots-txt] [http] [info] https://ddqk-webapi.szhome.com:443/robots.txt
+[robots-txt] [http] [info] https://mail.szap.com:443/robots.txt
+[robots-txt-endpoint] [http] [info] https://ddqk-webapi.szhome.com:443/robots.txt
+[robots-txt-endpoint] [http] [info] https://ddzf-webapi.szhome.com:443/robots.txt
+[robots-txt-endpoint] [http] [info] https://webapi.bbs.szhome.com:443/robots.txt
+[robots-txt-endpoint:endpoints] [http] [info] https://mail.szap.com:443/robots.txt ["/ar","/ad"]

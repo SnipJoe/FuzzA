@@ -1,0 +1,4 @@
+[dns-rebinding:IPv4] [dns] [unknown] m.szap.com ["127.0.0.1"]
+[dns-rebinding:IPv4] [dns] [unknown] en.szafi.com.cn ["127.0.0.1"]
+[dns-rebinding:IPv4] [dns] [unknown] www.szap.com ["127.0.0.1"]
+[dns-rebinding:IPv4] [dns] [unknown] www.szafi.com.cn ["127.0.0.1"]
